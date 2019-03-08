@@ -1,0 +1,2 @@
+# djuwsgi
+Django+Uwsgi = djuwsgi

@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  djtest:
+    build:
+      context: .
+    command: uwsgi --ini project.ini --plugins python3 --protocol uwsgi
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
